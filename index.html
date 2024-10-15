@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HumanEval-V</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/f8ddf9854a.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="A Lightweight Visual Understanding and Reasoning Benchmark for Evaluating LMMs through Code Generation Tasks">
+    <meta name="keywords" content="Large Multimodal Model, Code Generation, Vision Language Model, Large Language Model">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> HumanEval-V: A Lightweight Visual Understanding and Reasoning Benchmark for Evaluating LMMs through Coding Tasks</title>
+
+    <link rel="icon" href="static/images/icon.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    
+    <script src="https://kit.fontawesome.com/eaf1856e6f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+  </head>
+  <body>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title is-bold">
+                <img src="static/images/icon.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+                <span style="vertical-align: middle">HumanEval-V</span>
+              </h1>
+              <h2 class="subtitle is-3 publication-subtitle">
+                A Lightweight Visual Understanding and Reasoning Benchmark for Evaluating LMMs through Coding Tasks
+              </h2>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Fengji Zhang*<sup style="color:#6fbf73;">†,1</sup></a>,</span>
+                <span class="author-block">
+                  Linquan Wu*<sup style="color:#6fbf73;">1</sup></a>,
+                </span>
+                <span class="author-block">
+                  Bai Huiyu*<sup style="color:#6fbf73;">1</sup></a>,
+                </span>
+                <span class="author-block">Guancheng Lin*<sup style="color:#007bff;">2</sup>,</span><br>
+                <span class="author-block">Xiao Li<sup style="color:#ffac33;">3</sup>,</span>
+                <span class="author-block">Xiao Yu<sup style="color:#ed4b82;">4</sup>,</span>
+                <span class="author-block">Yue Wang<sup style="color:#9b51e0;">5</sup>,</span>
+                <span class="author-block">Bei Chen<sup style="color:#9b51e0;">5</sup>,</span>
+                <span class="author-block">Jacky Keung<sup style="color:#6fbf73;">1</sup></span>
+              </div>
+              <br>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup style="color:#6fbf73;">1</sup>CityU Hong Kong,</span>
+                <span class="author-block"><sup style="color:#007bff;">2</sup>Wuhan University,</span>
+                <span class="author-block"><sup style="color:#ffac33;">3</sup>Tsinghua University,</span>
+                <span class="author-block"><sup style="color:#ed4b82;">4</sup>Zhejiang University,</span>
+                <span class="author-block"><sup style="color:#9b51e0;">5</sup>Independent</span>
+              </div>
+
+              <br>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">*Core Contributors</span><br>
+                <span class="author-block">†Corresponding to:</span>
+                <span class="author-block"><a href="mailto:notfinished@yet.com">fengji.zhang@my.cityu.edu.hk</a></span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>&nbsp
+                  <span class="link-block">
+                    <a href="https://huggingface.co/datasets/HumanEval-V/HumanEval-V-Benchmark" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon" style="font-size:18px">🤗</span>
+                      <span>Dataset</span>
+                    </a>
+                  </span>&nbsp
+                  <span class="link-block">
+                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon" style="font-size:18px">🤗</span>
+                      <span>Dataset Viewer</span>
+                    </a>
+                  </span>&nbsp
+                  <span class="link-block">
+                    <a href="https://github.com/HumanEval-V/HumanEval-V-Benchmark" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>&nbsp
+                  <span class="link-block">
+                    <a href="#leaderboard" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon" style="font-size:18px">🏆</span>
+                      <span>Leaderboard</span>
+                    </a>
+                  </span>&nbsp
+                  <span class="link-block">
+                    <a href="" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon" style="font-size:18px">🌊</span>
+                      <span>Twitter</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser">
+      <div class="container is-max-desktop has-text-centered">
+        <img src="static/images/introduction_example.png" alt="HumanEval-V Coding Task"  width="80%"/>
+        <p>An example coding task in HumanEval-V. Each task involves completing a <b>Python function</b> based on<br> <b>a single image, the function signature, and problem descriptions</b> provided in the comment block.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Introduction</h2>
+            <div class="content has-text-justified">
+              <p>
+                Coding tasks have been valuable for evaluating Large Language Models (LLMs), as they demand the comprehension of <b>high-level instructions, complex reasoning, and the implementation of functional programs</b> -- core capabilities for advancing Artificial General Intelligence. Despite the progress in Large Multimodal Models (LMMs), which extend  LLMs with visual perception and understanding capabilities, there remains <b>a notable lack of coding benchmarks that rigorously assess LMMs, particularly in tasks that emphasize visual reasoning</b>. 
+                To address this gap, we introduce HumanEval-V, a novel and lightweight benchmark specifically designed to evaluate LMMs' visual understanding and reasoning capabilities through code generation tasks. <font color="#9900FF"><b>HumanEval-V includes 108 carefully crafted, entry-level Python coding tasks</b></font> derived from platforms like CodeForces and Stack Overflow. Each task is adapted by modifying the context and algorithmic patterns of the original problems, with visual elements redrawn to ensure distinction from the source, preventing potential data leakage.
+                LMMs are required to <font color="#9900FF"><b>complete the code solution based on the provided visual context and a predefined Python function signature</b></font> outlining the task requirements. Every  task is equipped with meticulously <font color="#9900FF"><b>handcrafted test cases for execution-based pass@<i>k</i> evaluation</b></font>.
+                We evaluate 20+ state-of-the-art LMMs using HumanEval-V, uncovering significant challenges. Proprietary models like <b>GPT-4o achieve only 13% pass@1 and 36.4% pass@10</b>, while <b>open-weight models with 70B parameters score below 4% pass@1</b>. Ablation studies further demonstrate the limitations of current LMMs in vision  reasoning and  coding abilities. 
+                These results highlight key areas for future research to enhance LMMs' capabilities.
+              </p>
+            </div>
+            <h2 class="title is-3">Benchmark Construction</h2>
+            <div class="container is-max-desktop has-text-centered">
+              <img src="static/images/construct_pipeline.png" alt="HumanEval-V Construction">
+              <p>The construction of HumanEval-V follows a <b>collect-adapt-mutate</b> pipeline. After constructing the benchmark, we perform rigorous validation to ensure that each coding task <b>aligns with the standards</b>.
+              </p>
+            </div>
+            <br>
+            <h2 class="title is-3">Visual Context Examples</h2>
+            <div class="container is-max-desktop has-text-centered">
+              <img src="static/images/concatenated_images.png" alt="HumanEval-V Examples">
+              <p>HumanEval-V includes visual elements like trees, graphs, matrices, maps, grids, flowcharts, and more. The visual contexts are designed to be <b>indispensable and self-explanatory</b>, embedding rich contextual information and algorithmic patterns.
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+      <!-------------------------------------------------------------------- RESULTS SECTION -------------------------------------------------------------------->
+      <div class="columns is-centered m-6">
+        <div class="column is-full has-text-centered content">
+          <h2 class="title is-3" id="leaderboard">Leaderboard on HumanEval-V</h2>
+          
+          <div class="model-labels-container">
+            <span class="leaderboard-label open_source">Open-Source</span>
+            <span class="leaderboard-label proprietary">Proprietary</span>
+          </div>
+          <br>
+          <div class="content has-text-centered content">
+            <p class="test-desc"> The best-performing model is <b>in-bold</b>, and the second best is <u>underlined</u>. Click on Pass@1 and Pass@10 to change the sorting.<br> Pass@1 is calculated using greedy decoding, while Pass@10 is based on 20 samples with parameters <i>t=0.8</i>, <i>p=0.95</i>.</p>
+          </div>
+          <div class="leaderboard-container">
+            <div class="table-wrapper">
+              <table id="HEV-table">
+                <thead>
+                  <tr>
+                    <th class="sortable clickable" data-sort="string">Name</th>
+                    <th class="sortable clickable" data-sort="string">Design</th>
+                    <th class="sortable clickable" data-sort="string">Source</th>
+                    <th class="sortable clickable" data-sort="string">Size</th>
+                    <th class="sortable clickable" data-sort="date">Date</th>
+                    <th class="sortable clickable sort-desc" data-sort="number">Pass@1</th>
+                    <th class="sortable clickable" data-sort="number">Pass@10</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Table body will be populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- @PAN TODO: bibtex -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title is-3 has-text-centered">BibTeX</h2>
+        <pre><code>
+          @inproceedings{}
+    </code></pre>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mmmu-benchmark.github.io/">MMMU</a>, licensed under a <a rel="license"
+                                                  href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
