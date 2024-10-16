@@ -68,13 +68,13 @@ function populateTable(data) {
     }
 
     row.innerHTML = `
-      <td>${model.name}</td>                <!-- Model name -->
-      <td>${model.design}</td>              <!-- Model structure design -->
+      <td>${model.name}</td>                 <!-- Model name -->
       <td><a href="${model.link}" target="_blank">Link</a></td>
+      <td>${model.design}</td>               <!-- Model structure design -->
       <td>${model.size}</td>                 <!-- Model size -->
-      <td>${model.date}</td>                 <!-- Date -->
       <td>${pass1Cell}</td>                  <!-- Pass@1 score with conditional bold or underline -->
       <td>${pass10Cell}</td>                 <!-- Pass@10 score with conditional bold or underline -->
+      <td>${model.date}</td>                 <!-- Date -->
     `;
 
     tableBody.appendChild(row);
@@ -114,7 +114,7 @@ function enableTableSorting() {
 }
 
 function initializeSorting() {
-  sortTableByColumn(5, 'number', false);
+  sortTableByColumn(4, 'number', false);
 }
 
 function sortTableByColumn(columnIndex, type, ascending) {
