@@ -2,6 +2,18 @@
   "leaderboardData": [
     {
       "info": {
+        "name": "Claude 3.5 Sonnet (1022)",
+        "design": "-",
+        "size": "-",
+        "date": "2024-10-23",
+        "@1": "25.9",
+        "@10": "42.6",
+        "type": "proprietary",
+        "link": "https://www.anthropic.com/news/3-5-models-and-computer-use"
+      }
+    },
+    {
+      "info": {
         "name": "Claude 3.5 Sonnet (0620)",
         "design": "-",
         "size": "-",
