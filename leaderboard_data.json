@@ -98,6 +98,18 @@
     },
     {
       "info": {
+        "name": "Ovis1.6-Gemma2-9B",
+        "design": "Encoder-Decoder",
+        "size": "10.2B",
+        "date": "2024-10-23",
+        "@1": "2.8",
+        "@10": "7.3",
+        "type": "open_source",
+        "link": "https://huggingface.co/AIDC-AI/Ovis1.6-Gemma2-9B"
+      }
+    },
+    {
+      "info": {
         "name": "LLaVA-OneVision-Qwen2-72B-OV",
         "design": "Encoder-Decoder",
         "size": "73.2B",
