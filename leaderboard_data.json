@@ -335,6 +335,20 @@
         "type": "open_source",
         "link": "https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct"
       }
+    },
+    {
+      "info": {
+        "name": "GLM-4V-9B",
+        "design": "Encoder-Decoder",
+        "size": "13.9B",
+        "date": "2024-10-24",
+        "psr@1": "88.9",
+        "psr@10": "88.8",
+        "pass@1": "0.0",
+        "pass@10": "0.5",
+        "type": "open_source",
+        "link": "https://huggingface.co/THUDM/glm-4v-9b"
+      }
     }
   ]
 }
