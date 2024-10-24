@@ -32,8 +32,8 @@ function populateTable(data) {
   const tableBody = document.querySelector('#HEV-table tbody');
   tableBody.innerHTML = '';
 
-  const pass1Values = data.map(entry => parseFloat(entry.info["@1"]) || 0);
-  const pass10Values = data.map(entry => parseFloat(entry.info["@10"]) || 0);
+  const pass1Values = data.map(entry => parseFloat(entry.info["pass@1"]) || 0);
+  const pass10Values = data.map(entry => parseFloat(entry.info["pass@10"]) || 0);
 
   const maxPass1 = Math.max(...pass1Values);
   const secondMaxPass1 = Math.max(...pass1Values.filter(value => value < maxPass1));
@@ -46,25 +46,25 @@ function populateTable(data) {
     const row = document.createElement('tr');
     row.classList.add(model.type);
 
-    const pass1Value = parseFloat(model["@1"]) || 0;
-    const pass10Value = parseFloat(model["@10"]) || 0;
+    const pass1Value = parseFloat(model["pass@1"]) || 0;
+    const pass10Value = parseFloat(model["pass@10"]) || 0;
 
     let pass1Cell;
     if (pass1Value === maxPass1) {
-      pass1Cell = `<b>${model["@1"]}</b>`;
+      pass1Cell = `<b>${model["pass@1"]}</b>`;
     } else if (pass1Value === secondMaxPass1) {
-      pass1Cell = `<u>${model["@1"]}</u>`;
+      pass1Cell = `<u>${model["pass@1"]}</u>`;
     } else {
-      pass1Cell = model["@1"];
+      pass1Cell = model["pass@1"];
     }
 
     let pass10Cell;
     if (pass10Value === maxPass10) {
-      pass10Cell = `<b>${model["@10"]}</b>`;
+      pass10Cell = `<b>${model["pass@10"]}</b>`;
     } else if (pass10Value === secondMaxPass10) {
-      pass10Cell = `<u>${model["@10"]}</u>`;
+      pass10Cell = `<u>${model["pass@10"]}</u>`;
     } else {
-      pass10Cell = model["@10"];
+      pass10Cell = model["pass@10"];
     }
 
     row.innerHTML = `
@@ -74,6 +74,8 @@ function populateTable(data) {
       <td>${model.size}</td>                 <!-- Model size -->
       <td>${pass1Cell}</td>                  <!-- Pass@1 score with conditional bold or underline -->
       <td>${pass10Cell}</td>                 <!-- Pass@10 score with conditional bold or underline -->
+      <td>${model["psr@1"]}</td>                  <!-- Pass@1 score with conditional bold or underline -->
+      <td>${model["psr@10"]}</td>                 <!-- Pass@10 score with conditional bold or underline -->
       <td>${model.date}</td>                 <!-- Date -->
     `;
 

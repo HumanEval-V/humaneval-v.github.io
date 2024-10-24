@@ -177,7 +177,10 @@
           </div>
           <br>
           <div class="content has-text-centered content">
-            <p class="test-desc"> The best-performing model is <b>in-bold</b>, and the second best is <u>underlined</u>. Click on Pass@1 and Pass@10 to change the sorting.<br> Pass@1 is calculated using greedy decoding, while Pass@10 is based on 20 samples with parameters <i>t=0.8</i>, <i>p=0.95</i>.</p>
+            <p class="test-desc"> 
+              The best performance is shown in <b>bold</b>, while the second-best is indicated by <u>underlining</u>. 
+              You can sort <i>Pass@1</i> or <i>Pass@10</i> by clicking on the column headers.<br>
+            </p>
           </div>
           <div class="leaderboard-container">
             <div class="table-wrapper">
@@ -190,6 +193,8 @@
                     <th class="sortable clickable" data-sort="string">Size</th>
                     <th class="sortable clickable sort-desc" data-sort="number">Pass@1</th>
                     <th class="sortable clickable" data-sort="number">Pass@10</th>
+                    <th class="sortable clickable" data-sort="number">PSR@1</th>
+                    <th class="sortable clickable" data-sort="number">PSR@10</th>
                     <th class="sortable clickable" data-sort="date">Date</th>
                   </tr>
                 </thead>
@@ -198,6 +203,15 @@
                 </tbody>
               </table>
             </div>
+          </div>
+          <div class="content has-text-left content">
+            <p class="test-desc">
+            <ul>
+              <li><i>Pass@1</i> is computed using greedy decoding, whereas <i>Pass@10</i> is based on 20 generated samples with sampling parameters of <i>t=0.8</i> and <i>p=0.95</i>.</li>
+              <li><i>PSR</i> represents the percentage of samples that pass Pylint checks without any errors.</li>
+              <li>The <i>Encoder-Decoder</i> design signifies that the model is trained using a vision encoder and a language model decoder.</li>
+            </ul>
+            </p>
           </div>
         </div>
       </div>

@@ -6,8 +6,10 @@
         "design": "-",
         "size": "-",
         "date": "2024-10-23",
-        "@1": "25.9",
-        "@10": "42.6",
+        "psr@1": "95.4",
+        "psr@10": "97.0",
+        "pass@1": "25.9",
+        "pass@10": "42.6",
         "type": "proprietary",
         "link": "https://www.anthropic.com/news/3-5-models-and-computer-use"
       }
@@ -18,8 +20,10 @@
         "design": "-",
         "size": "-",
         "date": "2024-10-02",
-        "@1": "18.5",
-        "@10": "25.9",
+        "psr@1": "99.1",
+        "psr@10": "99.0",
+        "pass@1": "18.5",
+        "pass@10": "25.9",
         "type": "proprietary",
         "link": "https://www.anthropic.com/news/claude-3-5-sonnet"
       }
@@ -30,8 +34,10 @@
         "design": "-",
         "size": "-",
         "date": "2024-10-02",
-        "@1": "13.0",
-        "@10": "36.4",
+        "psr@1": "97.2",
+        "psr@10": "98.0",
+        "pass@1": "13.0",
+        "pass@10": "36.4",
         "type": "proprietary",
         "link": "https://openai.com/index/hello-gpt-4o/"
       }
@@ -42,8 +48,10 @@
         "design": "-",
         "size": "-",
         "date": "2024-10-02",
-        "@1": "10.2",
-        "@10": "22.2",
+        "psr@1": "97.2",
+        "psr@10": "97.5",
+        "pass@1": "10.2",
+        "pass@10": "22.2",
         "type": "proprietary",
         "link": "https://deepmind.google/technologies/gemini/pro/"
       }
@@ -54,8 +62,10 @@
         "design": "-",
         "size": "-",
         "date": "2024-10-02",
-        "@1": "8.3",
-        "@10": "13.2",
+        "psr@1": "99.1",
+        "psr@10": "97.5",
+        "pass@1": "8.3",
+        "pass@10": "13.2",
         "type": "proprietary",
         "link": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf"
       }
@@ -66,8 +76,10 @@
         "design": "-",
         "size": "-",
         "date": "2024-10-02",
-        "@1": "6.5",
-        "@10": "15.4",
+        "psr@1": "100",
+        "psr@10": "99.8",
+        "pass@1": "6.5",
+        "pass@10": "15.4",
         "type": "proprietary",
         "link": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/"
       }
@@ -78,8 +90,10 @@
         "design": "Encoder-Decoder",
         "size": "73.4B",
         "date": "2024-10-02",
-        "@1": "3.7",
-        "@10": "16.0",
+        "psr@1": "100",
+        "psr@10": "97.2",
+        "pass@1": "3.7",
+        "pass@10": "16.0",
         "type": "open_source",
         "link": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct"
       }
@@ -90,8 +104,10 @@
         "design": "Encoder-Decoder",
         "size": "76.3B",
         "date": "2024-10-02",
-        "@1": "3.7",
-        "@10": "12.8",
+        "psr@1": "81.5",
+        "psr@10": "77.8",
+        "pass@1": "3.7",
+        "pass@10": "12.8",
         "type": "open_source",
         "link": "https://huggingface.co/OpenGVLab/InternVL2-Llama3-76B"
       }
@@ -102,8 +118,10 @@
         "design": "Encoder-Decoder",
         "size": "10.2B",
         "date": "2024-10-23",
-        "@1": "2.8",
-        "@10": "7.3",
+        "psr@1": "90.7",
+        "psr@10": "93.5",
+        "pass@1": "2.8",
+        "pass@10": "7.3",
         "type": "open_source",
         "link": "https://huggingface.co/AIDC-AI/Ovis1.6-Gemma2-9B"
       }
@@ -114,8 +132,10 @@
         "design": "Encoder-Decoder",
         "size": "73.2B",
         "date": "2024-10-02",
-        "@1": "1.9",
-        "@10": "12.4",
+        "psr@1": "99.1",
+        "psr@10": "97.1",
+        "pass@1": "1.9",
+        "pass@10": "12.4",
         "type": "open_source",
         "link": "https://huggingface.co/llava-hf/llava-onevision-qwen2-72b-ov-hf"
       }
@@ -126,8 +146,10 @@
         "design": "Encoder-Decoder",
         "size": "12.0B",
         "date": "2024-10-02",
-        "@1": "1.9",
-        "@10": "8.7",
+        "psr@1": "89.8",
+        "psr@10": "91.6",
+        "pass@1": "1.9",
+        "pass@10": "9.2",
         "type": "open_source",
         "link": "https://huggingface.co/mistralai/Pixtral-12B-2409"
       }
@@ -138,8 +160,10 @@
         "design": "MoE Enc.-Dec.",
         "size": "3.9/25.3B",
         "date": "2024-10-02",
-        "@1": "1.9",
-        "@10": "5.3",
+        "psr@1": "95.4",
+        "psr@10": "96.1",
+        "pass@1": "1.9",
+        "pass@10": "5.3",
         "type": "open_source",
         "link": "https://huggingface.co/rhymes-ai/Aria"
       }
@@ -150,8 +174,10 @@
         "design": "Encoder-Decoder",
         "size": "8.1B",
         "date": "2024-10-02",
-        "@1": "0.9",
-        "@10": "2.6",
+        "psr@1": "85.2",
+        "psr@10": "78.8",
+        "pass@1": "0.9",
+        "pass@10": "2.6",
         "type": "open_source",
         "link": "https://huggingface.co/OpenGVLab/InternVL2-8B"
       }
@@ -162,8 +188,10 @@
         "design": "Encoder-Decoder",
         "size": "10.7B",
         "date": "2024-10-02",
-        "@1": "0.9",
-        "@10": "2.3",
+        "psr@1": "94.4",
+        "psr@10": "92.5",
+        "pass@1": "0.9",
+        "pass@10": "2.3",
         "type": "open_source",
         "link": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct"
       }
@@ -174,8 +202,10 @@
         "design": "Encoder-Decoder",
         "size": "8.1B",
         "date": "2024-10-02",
-        "@1": "0.9",
-        "@10": "2.2",
+        "psr@1": "85.2",
+        "psr@10": "79.9",
+        "pass@1": "0.9",
+        "pass@10": "2.2",
         "type": "open_source",
         "link": "https://huggingface.co/openbmb/MiniCPM-V-2_6"
       }
@@ -186,8 +216,10 @@
         "design": "Encoder-Decoder",
         "size": "8.0B",
         "date": "2024-10-02",
-        "@1": "0.9",
-        "@10": "1.9",
+        "psr@1": "83.3",
+        "psr@10": "85.3",
+        "pass@1": "0.9",
+        "pass@10": "1.9",
         "type": "open_source",
         "link": "https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-ov-hf"
       }
@@ -198,8 +230,10 @@
         "design": "Encoder-Decoder",
         "size": "4.2B",
         "date": "2024-10-02",
-        "@1": "0.9",
-        "@10": "1.6",
+        "psr@1": "95.4",
+        "psr@10": "91.6",
+        "pass@1": "0.9",
+        "pass@10": "1.6",
         "type": "open_source",
         "link": "https://huggingface.co/microsoft/Phi-3.5-vision-instruct"
       }
@@ -210,8 +244,10 @@
         "design": "Encoder-Decoder",
         "size": "25.5B",
         "date": "2024-10-02",
-        "@1": "0.0",
-        "@10": "3.2",
+        "psr@1": "74.1",
+        "psr@10": "69.8",
+        "pass@1": "0.0",
+        "pass@10": "3.2",
         "type": "open_source",
         "link": "https://huggingface.co/OpenGVLab/InternVL2-26B"
       }
@@ -222,8 +258,10 @@
         "design": "Encoder-Decoder",
         "size": "4.2B",
         "date": "2024-10-02",
-        "@1": "0.0",
-        "@10": "2.6",
+        "psr@1": "87.0",
+        "psr@10": "82.2",
+        "pass@1": "0.0",
+        "pass@10": "2.6",
         "type": "open_source",
         "link": "https://huggingface.co/microsoft/Phi-3-vision-128k-instruct"
       }
@@ -234,8 +272,10 @@
         "design": "Encoder-Decoder",
         "size": "4.2B",
         "date": "2024-10-02",
-        "@1": "0.0",
-        "@10": "2.3",
+        "psr@1": "91.7",
+        "psr@10": "92.1",
+        "pass@1": "0.0",
+        "pass@10": "2.3",
         "type": "open_source",
         "link": "https://huggingface.co/OpenGVLab/InternVL2-4B"
       }
@@ -246,8 +286,10 @@
         "design": "Encoder-Decoder",
         "size": "8.5B",
         "date": "2024-10-02",
-        "@1": "0.0",
-        "@10": "2.3",
+        "psr@1": "94.4",
+        "psr@10": "85.1",
+        "pass@1": "0.0",
+        "pass@10": "2.3",
         "type": "open_source",
         "link": "https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5"
       }
@@ -258,8 +300,10 @@
         "design": "Encoder-Decoder",
         "size": "25.5B",
         "date": "2024-10-02",
-        "@1": "0.0",
-        "@10": "2.1",
+        "psr@1": "70.4",
+        "psr@10": "71.5",
+        "pass@1": "0.0",
+        "pass@10": "2.1",
         "type": "open_source",
         "link": "https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5"
       }
@@ -270,8 +314,10 @@
         "design": "Encoder-Decoder",
         "size": "40.1B",
         "date": "2024-10-02",
-        "@1": "0.0",
-        "@10": "1.6",
+        "psr@1": "91.7",
+        "psr@10": "87.6",
+        "pass@1": "0.0",
+        "pass@10": "1.6",
         "type": "open_source",
         "link": "https://huggingface.co/OpenGVLab/InternVL2-40B"
       }
@@ -282,8 +328,10 @@
         "design": "Encoder-Decoder",
         "size": "8.3B",
         "date": "2024-10-02",
-        "@1": "0.0",
-        "@10": "1.6",
+        "psr@1": "95.4",
+        "psr@10": "73.8",
+        "pass@1": "0.0",
+        "pass@10": "1.6",
         "type": "open_source",
         "link": "https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct"
       }
