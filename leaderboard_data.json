@@ -145,7 +145,7 @@
         "name": "Pixtral-12B-2409",
         "design": "Encoder-Decoder",
         "size": "12.0B",
-        "date": "2024-10-02",
+        "date": "2024-10-23",
         "psr@1": "89.8",
         "psr@10": "91.6",
         "pass@1": "1.9",
@@ -159,7 +159,7 @@
         "name": "Aria",
         "design": "MoE Enc.-Dec.",
         "size": "3.9/25.3B",
-        "date": "2024-10-02",
+        "date": "2024-10-23",
         "psr@1": "95.4",
         "psr@10": "96.1",
         "pass@1": "1.9",
@@ -187,7 +187,7 @@
         "name": "Llama-3.2-11B-Vision-Instruct",
         "design": "Encoder-Decoder",
         "size": "10.7B",
-        "date": "2024-10-02",
+        "date": "2024-10-23",
         "psr@1": "94.4",
         "psr@10": "92.5",
         "pass@1": "0.9",
@@ -348,6 +348,34 @@
         "pass@10": "0.5",
         "type": "open_source",
         "link": "https://huggingface.co/THUDM/glm-4v-9b"
+      }
+    },
+    {
+      "info": {
+        "name": "CogVLM2-Llama3-Chat-19B",
+        "design": "Encoder-Decoder",
+        "size": "19.5B",
+        "date": "2024-10-24",
+        "psr@1": "74.1",
+        "psr@10": "52.0",
+        "pass@1": "0.0",
+        "pass@10": "0.5",
+        "type": "open_source",
+        "link": "https://huggingface.co/THUDM/cogvlm2-llama3-chat-19B"
+      }
+    },
+    {
+      "info": {
+        "name": "Emu3-Chat",
+        "design": "Decoder-Only",
+        "size": "8.5B",
+        "date": "2024-10-24",
+        "psr@1": "10.2",
+        "psr@10": "14.2",
+        "pass@1": "0.0",
+        "pass@10": "0.0",
+        "type": "open_source",
+        "link": "https://huggingface.co/BAAI/Emu3-Chat"
       }
     }
   ]
