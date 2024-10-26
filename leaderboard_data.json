@@ -366,6 +366,20 @@
     },
     {
       "info": {
+        "name": "mPLUG-Owl3-7B",
+        "design": "Encoder-Decoder",
+        "size": "8.1B",
+        "date": "2024-10-24",
+        "psr@1": "79.6",
+        "psr@10": "74.7",
+        "pass@1": "0.0",
+        "pass@10": "0.0",
+        "type": "open_source",
+        "link": "https://huggingface.co/mPLUG/mPLUG-Owl3-7B-240728"
+      }
+    },
+    {
+      "info": {
         "name": "Emu3-Chat",
         "design": "Decoder-Only",
         "size": "8.5B",
