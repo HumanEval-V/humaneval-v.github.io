@@ -142,6 +142,20 @@
     },
     {
       "info": {
+        "name": "NVLM-D-72B",
+        "design": "Encoder-Decoder",
+        "size": "79.4B",
+        "date": "2024-10-31",
+        "psr@1": "97.2",
+        "psr@10": "97.3",
+        "pass@1": "1.9",
+        "pass@10": "10.7",
+        "type": "open_source",
+        "link": "https://huggingface.co/nvidia/NVLM-D-72B"
+      }
+    },
+    {
+      "info": {
         "name": "Pixtral-12B-2409",
         "design": "Encoder-Decoder",
         "size": "12.0B",
