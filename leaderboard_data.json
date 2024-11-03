@@ -16,6 +16,20 @@
     },
     {
       "info": {
+        "name": "Gemini 1.5 Pro (002)",
+        "design": "-",
+        "size": "-",
+        "date": "2024-11-03",
+        "psr@1": "97.2",
+        "psr@10": "96.6",
+        "pass@1": "20.4",
+        "pass@10": "26.9",
+        "type": "proprietary",
+        "link": "https://ai.google.dev/gemini-api/docs/models/gemini?_gl=1*ftjakt*_up*MQ..&gclid=CjwKCAjw3P-2BhAEEiwA3yPhwDJyWCHxlCV992gXmaiX67tjVElZZjPepjwPJtoPXxDy3kmEw7TB8RoCGYQQAvD_BwE#gemini-1.5-pro"
+      }
+    },
+    {
+      "info": {
         "name": "Claude 3.5 Sonnet (0620)",
         "design": "-",
         "size": "-",
@@ -26,6 +40,20 @@
         "pass@10": "25.9",
         "type": "proprietary",
         "link": "https://www.anthropic.com/news/claude-3-5-sonnet"
+      }
+    },
+    {
+      "info": {
+        "name": "Gemini 1.5 Flash (002)",
+        "design": "-",
+        "size": "-",
+        "date": "2024-11-03",
+        "psr@1": "94.4",
+        "psr@10": "96.5",
+        "pass@1": "14.8",
+        "pass@10": "18.2",
+        "type": "proprietary",
+        "link": "https://ai.google.dev/gemini-api/docs/models/gemini?_gl=1*ftjakt*_up*MQ..&gclid=CjwKCAjw3P-2BhAEEiwA3yPhwDJyWCHxlCV992gXmaiX67tjVElZZjPepjwPJtoPXxDy3kmEw7TB8RoCGYQQAvD_BwE#gemini-1.5-flash"
       }
     },
     {
@@ -53,7 +81,7 @@
         "pass@1": "10.2",
         "pass@10": "22.2",
         "type": "proprietary",
-        "link": "https://deepmind.google/technologies/gemini/pro/"
+        "link": "https://ai.google.dev/gemini-api/docs/models/gemini?_gl=1*ftjakt*_up*MQ..&gclid=CjwKCAjw3P-2BhAEEiwA3yPhwDJyWCHxlCV992gXmaiX67tjVElZZjPepjwPJtoPXxDy3kmEw7TB8RoCGYQQAvD_BwE#gemini-1.5-pro"
       }
     },
     {
@@ -67,7 +95,7 @@
         "pass@1": "8.3",
         "pass@10": "13.2",
         "type": "proprietary",
-        "link": "https://storage.googleapis.com/deepmind-media/gemini/gemini_v1_5_report.pdf"
+        "link": "https://ai.google.dev/gemini-api/docs/models/gemini?_gl=1*ftjakt*_up*MQ..&gclid=CjwKCAjw3P-2BhAEEiwA3yPhwDJyWCHxlCV992gXmaiX67tjVElZZjPepjwPJtoPXxDy3kmEw7TB8RoCGYQQAvD_BwE#gemini-1.5-flash"
       }
     },
     {
