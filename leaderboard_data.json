@@ -72,6 +72,20 @@
     },
     {
       "info": {
+        "name": "Pixtral-Large-Instruct-2411",
+        "design": "Encoder-Decoder",
+        "size": "124B",
+        "date": "2024-11-20",
+        "psr@1": "99.1",
+        "psr@10": "98.4",
+        "pass@1": "11.1",
+        "pass@10": "26.9",
+        "type": "open_source",
+        "link": "https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411"
+      }
+    },
+    {
+      "info": {
         "name": "Gemini 1.5 Pro (001)",
         "design": "-",
         "size": "-",
