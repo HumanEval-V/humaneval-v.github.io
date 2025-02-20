@@ -1,5 +1,5 @@
 # HumanEval-V
-Homepage of HumanEval-V, A Lightweight Visual Understanding and Reasoning Benchmark for Evaluating LMMs through Coding Tasks.
+Homepage of HumanEval-V: Benchmarking High-Level Visual Reasoning with Complex Diagrams in Coding Tasks
 
 This website is adapted from [Nerfies website](https://nerfies.github.io) and [MMMU](https://mmmu-benchmark.github.io/).
 
