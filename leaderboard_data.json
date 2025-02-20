@@ -1,452 +1,362 @@
-{
-  "leaderboardData": [
+[
     {
-      "info": {
-        "name": "Claude 3.5 Sonnet (1022)",
-        "design": "-",
-        "size": "-",
-        "date": "2024-10-23",
-        "psr@1": "95.4",
-        "psr@10": "97.0",
-        "pass@1": "25.9",
-        "pass@10": "42.6",
-        "type": "proprietary",
-        "link": "https://www.anthropic.com/news/3-5-models-and-computer-use"
-      }
+        "info": {
+            "model": "Claude 3.5 Sonnet (1022)",
+            "type": "proprietary",
+            "link": "https://docs.anthropic.com/claude/docs",
+            "v2c@1": "28.1",
+            "v2c@3": "37.9",
+            "v2c-cot@1": "36.8",
+            "v2c-cot@3": "47.9",
+            "v2t2c@1": "33.2",
+            "v2t2c@3": "43.6",
+            "v2t2c-4o@1": "31.6",
+            "v2t2c-4o@3": "43.7"
+        }
     },
     {
-      "info": {
-        "name": "Gemini 1.5 Pro (002)",
-        "design": "-",
-        "size": "-",
-        "date": "2024-11-03",
-        "psr@1": "97.2",
-        "psr@10": "96.6",
-        "pass@1": "20.4",
-        "pass@10": "26.9",
-        "type": "proprietary",
-        "link": "https://ai.google.dev/gemini-api/docs/models/gemini?_gl=1*ftjakt*_up*MQ..&gclid=CjwKCAjw3P-2BhAEEiwA3yPhwDJyWCHxlCV992gXmaiX67tjVElZZjPepjwPJtoPXxDy3kmEw7TB8RoCGYQQAvD_BwE#gemini-1.5-pro"
-      }
+        "info": {
+            "model": "GPT-4o (0806)",
+            "type": "proprietary",
+            "link": "https://platform.openai.com/docs/models/gpt-4o",
+            "v2c@1": "24.1",
+            "v2c@3": "33.8",
+            "v2c-cot@1": "27.7",
+            "v2c-cot@3": "40.0",
+            "v2t2c@1": "26.5",
+            "v2t2c@3": "40.5",
+            "v2t2c-4o@1": "26.5",
+            "v2t2c-4o@3": "40.5"
+        }
     },
     {
-      "info": {
-        "name": "Claude 3.5 Sonnet (0620)",
-        "design": "-",
-        "size": "-",
-        "date": "2024-10-02",
-        "psr@1": "99.1",
-        "psr@10": "99.0",
-        "pass@1": "18.5",
-        "pass@10": "25.9",
-        "type": "proprietary",
-        "link": "https://www.anthropic.com/news/claude-3-5-sonnet"
-      }
+        "info": {
+            "model": "Gemini 1.5 Pro (002)",
+            "type": "proprietary",
+            "link": "https://ai.google.dev/gemini-api/docs/models/gemini",
+            "v2c@1": "23.3",
+            "v2c@3": "26.9",
+            "v2c-cot@1": "22.9",
+            "v2c-cot@3": "34.1",
+            "v2t2c@1": "28.5",
+            "v2t2c@3": "36.4",
+            "v2t2c-4o@1": "26.9",
+            "v2t2c-4o@3": "37.3"
+        }
     },
     {
-      "info": {
-        "name": "Gemini 1.5 Flash (002)",
-        "design": "-",
-        "size": "-",
-        "date": "2024-11-03",
-        "psr@1": "94.4",
-        "psr@10": "96.5",
-        "pass@1": "14.8",
-        "pass@10": "18.2",
-        "type": "proprietary",
-        "link": "https://ai.google.dev/gemini-api/docs/models/gemini?_gl=1*ftjakt*_up*MQ..&gclid=CjwKCAjw3P-2BhAEEiwA3yPhwDJyWCHxlCV992gXmaiX67tjVElZZjPepjwPJtoPXxDy3kmEw7TB8RoCGYQQAvD_BwE#gemini-1.5-flash"
-      }
+        "info": {
+            "model": "Gemini 1.5 Flash (002)",
+            "type": "proprietary",
+            "link": "https://ai.google.dev/gemini-api/docs/models/gemini",
+            "v2c@1": "15.4",
+            "v2c@3": "20.5",
+            "v2c-cot@1": "17.4",
+            "v2c-cot@3": "24.9",
+            "v2t2c@1": "15.8",
+            "v2t2c@3": "22.0",
+            "v2t2c-4o@1": "18.6",
+            "v2t2c-4o@3": "27.2"
+        }
     },
     {
-      "info": {
-        "name": "GPT-4o (0513)",
-        "design": "-",
-        "size": "-",
-        "date": "2024-10-02",
-        "psr@1": "97.2",
-        "psr@10": "98.0",
-        "pass@1": "13.0",
-        "pass@10": "36.4",
-        "type": "proprietary",
-        "link": "https://openai.com/index/hello-gpt-4o/"
-      }
+        "info": {
+            "model": "GPT-4o-mini (0718)",
+            "type": "proprietary",
+            "link": "https://platform.openai.com/docs/models/gpt-4o",
+            "v2c@1": "9.90",
+            "v2c@3": "16.0",
+            "v2c-cot@1": "15.8",
+            "v2c-cot@3": "21.1",
+            "v2t2c@1": "14.2",
+            "v2t2c@3": "22.7",
+            "v2t2c-4o@1": "18.2",
+            "v2t2c-4o@3": "24.6"
+        }
     },
     {
-      "info": {
-        "name": "Pixtral-Large-Instruct-2411",
-        "design": "Encoder-Decoder",
-        "size": "124B",
-        "date": "2024-11-20",
-        "psr@1": "99.1",
-        "psr@10": "98.4",
-        "pass@1": "11.1",
-        "pass@10": "26.9",
-        "type": "open_source",
-        "link": "https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411"
-      }
+        "info": {
+            "model": "Pixtral 124B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/mistralai/Pixtral-Large-Instruct-2411",
+            "v2c@1": "12.6",
+            "v2c@3": "20.3",
+            "v2c-cot@1": "16.6",
+            "v2c-cot@3": "28.1",
+            "v2t2c@1": "21.3",
+            "v2t2c@3": "29.9",
+            "v2t2c-4o@1": "21.3",
+            "v2t2c-4o@3": "31.6"
+        }
     },
     {
-      "info": {
-        "name": "Gemini 1.5 Pro (001)",
-        "design": "-",
-        "size": "-",
-        "date": "2024-10-02",
-        "psr@1": "97.2",
-        "psr@10": "97.5",
-        "pass@1": "10.2",
-        "pass@10": "22.2",
-        "type": "proprietary",
-        "link": "https://ai.google.dev/gemini-api/docs/models/gemini?_gl=1*ftjakt*_up*MQ..&gclid=CjwKCAjw3P-2BhAEEiwA3yPhwDJyWCHxlCV992gXmaiX67tjVElZZjPepjwPJtoPXxDy3kmEw7TB8RoCGYQQAvD_BwE#gemini-1.5-pro"
-      }
+        "info": {
+            "model": "InternVL 2.5 78B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/OpenGVLab/InternVL2_5-78B",
+            "v2c@1": "12.3",
+            "v2c@3": "19.7",
+            "v2c-cot@1": "13.4",
+            "v2c-cot@3": "27.3",
+            "v2t2c@1": "17.8",
+            "v2t2c@3": "25.7",
+            "v2t2c-4o@1": "21.7",
+            "v2t2c-4o@3": "31.4"
+        }
     },
     {
-      "info": {
-        "name": "Gemini 1.5 Flash (001)",
-        "design": "-",
-        "size": "-",
-        "date": "2024-10-02",
-        "psr@1": "99.1",
-        "psr@10": "97.5",
-        "pass@1": "8.3",
-        "pass@10": "13.2",
-        "type": "proprietary",
-        "link": "https://ai.google.dev/gemini-api/docs/models/gemini?_gl=1*ftjakt*_up*MQ..&gclid=CjwKCAjw3P-2BhAEEiwA3yPhwDJyWCHxlCV992gXmaiX67tjVElZZjPepjwPJtoPXxDy3kmEw7TB8RoCGYQQAvD_BwE#gemini-1.5-flash"
-      }
+        "info": {
+            "model": "Qwen2 VL 72B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct",
+            "v2c@1": "9.10",
+            "v2c@3": "15.7",
+            "v2c-cot@1": "14.2",
+            "v2c-cot@3": "19.4",
+            "v2t2c@1": "10.7",
+            "v2t2c@3": "19.1",
+            "v2t2c-4o@1": "16.6",
+            "v2t2c-4o@3": "25.1"
+        }
     },
     {
-      "info": {
-        "name": "GPT-4o-mini (0513)",
-        "design": "-",
-        "size": "-",
-        "date": "2024-10-02",
-        "psr@1": "100",
-        "psr@10": "99.8",
-        "pass@1": "6.5",
-        "pass@10": "15.4",
-        "type": "proprietary",
-        "link": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/"
-      }
+        "info": {
+            "model": "LLaVA-OV 72B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/llava-hf/llava-onevision-qwen2-72b-ov-chat-hf",
+            "v2c@1": "6.70",
+            "v2c@3": "7.70",
+            "v2c-cot@1": "6.30",
+            "v2c-cot@3": "11.4",
+            "v2t2c@1": "10.7",
+            "v2t2c@3": "13.1",
+            "v2t2c-4o@1": "13.8",
+            "v2t2c-4o@3": "19.7"
+        }
     },
     {
-      "info": {
-        "name": "Qwen2-VL-72B-Instruct",
-        "design": "Encoder-Decoder",
-        "size": "73.4B",
-        "date": "2024-10-02",
-        "psr@1": "100",
-        "psr@10": "97.2",
-        "pass@1": "3.7",
-        "pass@10": "16.0",
-        "type": "open_source",
-        "link": "https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct"
-      }
+        "info": {
+            "model": "Molmo-D 72B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/allenai/Molmo-72B-0924",
+            "v2c@1": "3.20",
+            "v2c@3": "4.80",
+            "v2c-cot@1": "3.20",
+            "v2c-cot@3": "8.80",
+            "v2t2c@1": "1.60",
+            "v2t2c@3": "7.00",
+            "v2t2c-4o@1": "5.10",
+            "v2t2c-4o@3": "14.2"
+        }
     },
     {
-      "info": {
-        "name": "InternVL2-Llama3-76B",
-        "design": "Encoder-Decoder",
-        "size": "76.3B",
-        "date": "2024-10-02",
-        "psr@1": "81.5",
-        "psr@10": "77.8",
-        "pass@1": "3.7",
-        "pass@10": "12.8",
-        "type": "open_source",
-        "link": "https://huggingface.co/OpenGVLab/InternVL2-Llama3-76B"
-      }
+        "info": {
+            "model": "Llama-3.2-V 90B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
+            "v2c@1": "4.30",
+            "v2c@3": "6.10",
+            "v2c-cot@1": "4.00",
+            "v2c-cot@3": "8.20",
+            "v2t2c@1": "5.90",
+            "v2t2c@3": "10.9",
+            "v2t2c-4o@1": "4.70",
+            "v2t2c-4o@3": "11.0"
+        }
     },
     {
-      "info": {
-        "name": "Ovis1.6-Gemma2-9B",
-        "design": "Encoder-Decoder",
-        "size": "10.2B",
-        "date": "2024-10-23",
-        "psr@1": "90.7",
-        "psr@10": "93.5",
-        "pass@1": "2.8",
-        "pass@10": "7.3",
-        "type": "open_source",
-        "link": "https://huggingface.co/AIDC-AI/Ovis1.6-Gemma2-9B"
-      }
+        "info": {
+            "model": "Pixtral 12B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/mistralai/Pixtral-12B-2409",
+            "v2c@1": "4.00",
+            "v2c@3": "5.90",
+            "v2c-cot@1": "6.30",
+            "v2c-cot@3": "12.2",
+            "v2t2c@1": "5.50",
+            "v2t2c@3": "12.6",
+            "v2t2c-4o@1": "13.8",
+            "v2t2c-4o@3": "21.3"
+        }
     },
     {
-      "info": {
-        "name": "LLaVA-OneVision-Qwen2-72B-OV",
-        "design": "Encoder-Decoder",
-        "size": "73.2B",
-        "date": "2024-10-02",
-        "psr@1": "99.1",
-        "psr@10": "97.1",
-        "pass@1": "1.9",
-        "pass@10": "12.4",
-        "type": "open_source",
-        "link": "https://huggingface.co/llava-hf/llava-onevision-qwen2-72b-ov-hf"
-      }
+        "info": {
+            "model": "InternVL 2.5 26B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/OpenGVLab/InternVL2_5-26B",
+            "v2c@1": "3.60",
+            "v2c@3": "6.60",
+            "v2c-cot@1": "4.30",
+            "v2c-cot@3": "6.80",
+            "v2t2c@1": "2.80",
+            "v2t2c@3": "6.70",
+            "v2t2c-4o@1": "8.30",
+            "v2t2c-4o@3": "16.7"
+        }
     },
     {
-      "info": {
-        "name": "NVLM-D-72B",
-        "design": "Encoder-Decoder",
-        "size": "79.4B",
-        "date": "2024-10-31",
-        "psr@1": "97.2",
-        "psr@10": "97.3",
-        "pass@1": "1.9",
-        "pass@10": "10.7",
-        "type": "open_source",
-        "link": "https://huggingface.co/nvidia/NVLM-D-72B"
-      }
+        "info": {
+            "model": "Qwen2 VL 7B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct",
+            "v2c@1": "0.80",
+            "v2c@3": "3.30",
+            "v2c-cot@1": "1.60",
+            "v2c-cot@3": "3.90",
+            "v2t2c@1": "2.40",
+            "v2t2c@3": "6.30",
+            "v2t2c-4o@1": "6.30",
+            "v2t2c-4o@3": "14.7"
+        }
     },
     {
-      "info": {
-        "name": "Pixtral-12B-2409",
-        "design": "Encoder-Decoder",
-        "size": "12.0B",
-        "date": "2024-10-23",
-        "psr@1": "89.8",
-        "psr@10": "91.6",
-        "pass@1": "1.9",
-        "pass@10": "9.2",
-        "type": "open_source",
-        "link": "https://huggingface.co/mistralai/Pixtral-12B-2409"
-      }
+        "info": {
+            "model": "InternVL 2.5 8B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/OpenGVLab/InternVL2_5-8B",
+            "v2c@1": "0.80",
+            "v2c@3": "2.00",
+            "v2c-cot@1": "0.80",
+            "v2c-cot@3": "3.70",
+            "v2t2c@1": "1.20",
+            "v2t2c@3": "3.30",
+            "v2t2c-4o@1": "5.10",
+            "v2t2c-4o@3": "13.6"
+        }
     },
     {
-      "info": {
-        "name": "Aria",
-        "design": "MoE Enc.-Dec.",
-        "size": "3.9/25.3B",
-        "date": "2024-10-23",
-        "psr@1": "95.4",
-        "psr@10": "96.1",
-        "pass@1": "1.9",
-        "pass@10": "5.3",
-        "type": "open_source",
-        "link": "https://huggingface.co/rhymes-ai/Aria"
-      }
+        "info": {
+            "model": "InternVL 2.5 4B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/OpenGVLab/InternVL2_5-4B",
+            "v2c@1": "1.20",
+            "v2c@3": "4.10",
+            "v2c-cot@1": "3.20",
+            "v2c-cot@3": "3.40",
+            "v2t2c@1": "3.20",
+            "v2t2c@3": "5.80",
+            "v2t2c-4o@1": "5.90",
+            "v2t2c-4o@3": "13.5"
+        }
     },
     {
-      "info": {
-        "name": "InternVL2-8B",
-        "design": "Encoder-Decoder",
-        "size": "8.1B",
-        "date": "2024-10-02",
-        "psr@1": "85.2",
-        "psr@10": "78.8",
-        "pass@1": "0.9",
-        "pass@10": "2.6",
-        "type": "open_source",
-        "link": "https://huggingface.co/OpenGVLab/InternVL2-8B"
-      }
+        "info": {
+            "model": "LLaVA-OV 7B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-ov-chat-hf",
+            "v2c@1": "2.00",
+            "v2c@3": "1.90",
+            "v2c-cot@1": "1.60",
+            "v2c-cot@3": "2.40",
+            "v2t2c@1": "2.00",
+            "v2t2c@3": "3.20",
+            "v2t2c-4o@1": "5.10",
+            "v2t2c-4o@3": "10.2"
+        }
     },
     {
-      "info": {
-        "name": "Llama-3.2-11B-Vision-Instruct",
-        "design": "Encoder-Decoder",
-        "size": "10.7B",
-        "date": "2024-10-23",
-        "psr@1": "94.4",
-        "psr@10": "92.5",
-        "pass@1": "0.9",
-        "pass@10": "2.3",
-        "type": "open_source",
-        "link": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct"
-      }
+        "info": {
+            "model": "Phi-3.5-V 4B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/microsoft/Phi-3.5-vision-instruct",
+            "v2c@1": "0.00",
+            "v2c@3": "0.00",
+            "v2c-cot@1": "0.00",
+            "v2c-cot@3": "0.00",
+            "v2t2c@1": "0.00",
+            "v2t2c@3": "0.00",
+            "v2t2c-4o@1": "5.90",
+            "v2t2c-4o@3": "9.40"
+        }
     },
     {
-      "info": {
-        "name": "MiniCPM-V-2.6",
-        "design": "Encoder-Decoder",
-        "size": "8.1B",
-        "date": "2024-10-02",
-        "psr@1": "85.2",
-        "psr@10": "79.9",
-        "pass@1": "0.9",
-        "pass@10": "2.2",
-        "type": "open_source",
-        "link": "https://huggingface.co/openbmb/MiniCPM-V-2_6"
-      }
+        "info": {
+            "model": "Llama-3.2-V 11B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct",
+            "v2c@1": "2.00",
+            "v2c@3": "2.00",
+            "v2c-cot@1": "1.60",
+            "v2c-cot@3": "3.90",
+            "v2t2c@1": "2.00",
+            "v2t2c@3": "5.20",
+            "v2t2c-4o@1": "4.00",
+            "v2t2c-4o@3": "8.80"
+        }
     },
     {
-      "info": {
-        "name": "LLaVA-OneVision-Qwen2-7B-OV",
-        "design": "Encoder-Decoder",
-        "size": "8.0B",
-        "date": "2024-10-02",
-        "psr@1": "83.3",
-        "psr@10": "85.3",
-        "pass@1": "0.9",
-        "pass@10": "1.9",
-        "type": "open_source",
-        "link": "https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-ov-hf"
-      }
+        "info": {
+            "model": "Molmo-D 7B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/allenai/Molmo-7B-D-0924",
+            "v2c@1": "1.20",
+            "v2c@3": "1.00",
+            "v2c-cot@1": "0.40",
+            "v2c-cot@3": "1.80",
+            "v2t2c@1": "0.80",
+            "v2t2c@3": "1.00",
+            "v2t2c-4o@1": "2.80",
+            "v2t2c-4o@3": "8.40"
+        }
     },
     {
-      "info": {
-        "name": "Phi-3.5-Vision-Instruct",
-        "design": "Encoder-Decoder",
-        "size": "4.2B",
-        "date": "2024-10-02",
-        "psr@1": "95.4",
-        "psr@10": "91.6",
-        "pass@1": "0.9",
-        "pass@10": "1.6",
-        "type": "open_source",
-        "link": "https://huggingface.co/microsoft/Phi-3.5-vision-instruct"
-      }
+        "info": {
+            "model": "Chameleon 7B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/facebook/chameleon-7b",
+            "v2c@1": "0.00",
+            "v2c@3": "0.00",
+            "v2c-cot@1": "0.00",
+            "v2c-cot@3": "0.20",
+            "v2t2c@1": "0.00",
+            "v2t2c@3": "0.00",
+            "v2t2c-4o@1": "1.20",
+            "v2t2c-4o@3": "2.20"
+        }
     },
     {
-      "info": {
-        "name": "InternVL2-26B",
-        "design": "Encoder-Decoder",
-        "size": "25.5B",
-        "date": "2024-10-02",
-        "psr@1": "74.1",
-        "psr@10": "69.8",
-        "pass@1": "0.0",
-        "pass@10": "3.2",
-        "type": "open_source",
-        "link": "https://huggingface.co/OpenGVLab/InternVL2-26B"
-      }
+        "info": {
+            "model": "Chameleon 30B",
+            "type": "open_weight",
+            "link": "https://huggingface.co/facebook/chameleon-30b",
+            "v2c@1": "0.00",
+            "v2c@3": "0.00",
+            "v2c-cot@1": "0.00",
+            "v2c-cot@3": "0.20",
+            "v2t2c@1": "0.40",
+            "v2t2c@3": "0.00",
+            "v2t2c-4o@1": "0.00",
+            "v2t2c-4o@3": "1.90"
+        }
     },
     {
-      "info": {
-        "name": "Phi-3-Vision-128k-Instruct",
-        "design": "Encoder-Decoder",
-        "size": "4.2B",
-        "date": "2024-10-02",
-        "psr@1": "87.0",
-        "psr@10": "82.2",
-        "pass@1": "0.0",
-        "pass@10": "2.6",
-        "type": "open_source",
-        "link": "https://huggingface.co/microsoft/Phi-3-vision-128k-instruct"
-      }
+        "info": {
+            "model": "OpenAI o1",
+            "type": "proprietary",
+            "link": "https://openai.com/o1/",
+            "v2c@1": "-",
+            "v2c@3": "-",
+            "v2c-cot@1": "40.6",
+            "v2c-cot@3": "-",
+            "v2t2c@1": "-",
+            "v2t2c@3": "-",
+            "v2t2c-4o@1": "-",
+            "v2t2c-4o@3": "-"
+        }
     },
     {
-      "info": {
-        "name": "InternVL2-4B",
-        "design": "Encoder-Decoder",
-        "size": "4.2B",
-        "date": "2024-10-02",
-        "psr@1": "91.7",
-        "psr@10": "92.1",
-        "pass@1": "0.0",
-        "pass@10": "2.3",
-        "type": "open_source",
-        "link": "https://huggingface.co/OpenGVLab/InternVL2-4B"
-      }
-    },
-    {
-      "info": {
-        "name": "MiniCPM-Llama3-V2.5",
-        "design": "Encoder-Decoder",
-        "size": "8.5B",
-        "date": "2024-10-02",
-        "psr@1": "94.4",
-        "psr@10": "85.1",
-        "pass@1": "0.0",
-        "pass@10": "2.3",
-        "type": "open_source",
-        "link": "https://huggingface.co/openbmb/MiniCPM-Llama3-V-2_5"
-      }
-    },
-    {
-      "info": {
-        "name": "InternVL-Chat-V1.5",
-        "design": "Encoder-Decoder",
-        "size": "25.5B",
-        "date": "2024-10-02",
-        "psr@1": "70.4",
-        "psr@10": "71.5",
-        "pass@1": "0.0",
-        "pass@10": "2.1",
-        "type": "open_source",
-        "link": "https://huggingface.co/OpenGVLab/InternVL-Chat-V1-5"
-      }
-    },
-    {
-      "info": {
-        "name": "InternVL2-40B",
-        "design": "Encoder-Decoder",
-        "size": "40.1B",
-        "date": "2024-10-02",
-        "psr@1": "91.7",
-        "psr@10": "87.6",
-        "pass@1": "0.0",
-        "pass@10": "1.6",
-        "type": "open_source",
-        "link": "https://huggingface.co/OpenGVLab/InternVL2-40B"
-      }
-    },
-    {
-      "info": {
-        "name": "Qwen2-VL-7B-Instruct",
-        "design": "Encoder-Decoder",
-        "size": "8.3B",
-        "date": "2024-10-02",
-        "psr@1": "95.4",
-        "psr@10": "73.8",
-        "pass@1": "0.0",
-        "pass@10": "1.6",
-        "type": "open_source",
-        "link": "https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct"
-      }
-    },
-    {
-      "info": {
-        "name": "GLM-4V-9B",
-        "design": "Encoder-Decoder",
-        "size": "13.9B",
-        "date": "2024-10-24",
-        "psr@1": "88.9",
-        "psr@10": "88.8",
-        "pass@1": "0.0",
-        "pass@10": "0.5",
-        "type": "open_source",
-        "link": "https://huggingface.co/THUDM/glm-4v-9b"
-      }
-    },
-    {
-      "info": {
-        "name": "CogVLM2-Llama3-Chat-19B",
-        "design": "Encoder-Decoder",
-        "size": "19.5B",
-        "date": "2024-10-24",
-        "psr@1": "74.1",
-        "psr@10": "52.0",
-        "pass@1": "0.0",
-        "pass@10": "0.5",
-        "type": "open_source",
-        "link": "https://huggingface.co/THUDM/cogvlm2-llama3-chat-19B"
-      }
-    },
-    {
-      "info": {
-        "name": "mPLUG-Owl3-7B",
-        "design": "Encoder-Decoder",
-        "size": "8.1B",
-        "date": "2024-10-24",
-        "psr@1": "79.6",
-        "psr@10": "74.7",
-        "pass@1": "0.0",
-        "pass@10": "0.0",
-        "type": "open_source",
-        "link": "https://huggingface.co/mPLUG/mPLUG-Owl3-7B-240728"
-      }
-    },
-    {
-      "info": {
-        "name": "Emu3-Chat",
-        "design": "Decoder-Only",
-        "size": "8.5B",
-        "date": "2024-10-24",
-        "psr@1": "10.2",
-        "psr@10": "14.2",
-        "pass@1": "0.0",
-        "pass@10": "0.0",
-        "type": "open_source",
-        "link": "https://huggingface.co/BAAI/Emu3-Chat"
-      }
+        "info": {
+            "model": "QVQ-72B-Preview",
+            "type": "open_weight",
+            "link": "https://huggingface.co/Qwen/QVQ-72B-Preview",
+            "v2c@1": "-",
+            "v2c@3": "-",
+            "v2c-cot@1": "19.0",
+            "v2c-cot@3": "-",
+            "v2t2c@1": "-",
+            "v2t2c@3": "-",
+            "v2t2c-4o@1": "-",
+            "v2t2c-4o@3": "-"
+        }
     }
-  ]
-}
+]

@@ -21,62 +21,71 @@ function loadTableData() {
   fetch('./leaderboard_data.json') 
     .then(response => response.json()) 
     .then(data => {
-      populateTable(data.leaderboardData); 
+      populateTable(data); 
       enableTableSorting();
       initializeSorting();
     })
     .catch(error => console.error('Error loading leaderboard data:', error));
 }
 
+function getNumberFormat(metrics, key, value) {
+  // Parse the value as a float (or default to 0 if invalid)
+  const numericValue = parseFloat(value) || 0;
+
+  // Find the metric object for the given key
+  const metric = metrics.find(m => m.key === key);
+  if (!metric) return value; // If the metric is not found, return the original value
+
+  // Format the value based on whether it's the max or second max
+  if (numericValue === metric.max) {
+    return `<b>${value}</b>`;
+  } else if (numericValue === metric.second) {
+    return `<u>${value}</u>`;
+  } else {
+    return value;
+  }
+}
 function populateTable(data) {
   const tableBody = document.querySelector('#HEV-table tbody');
   tableBody.innerHTML = '';
 
-  const pass1Values = data.map(entry => parseFloat(entry.info["pass@1"]) || 0);
-  const pass10Values = data.map(entry => parseFloat(entry.info["pass@10"]) || 0);
+  // Define the metrics and their keys
+  const metrics = [
+    { key: "v2c@1", max: null, second: null },
+    { key: "v2c@3", max: null, second: null },
+    { key: "v2c-cot@1", max: null, second: null },
+    { key: "v2c-cot@3", max: null, second: null },
+    { key: "v2t2c@1", max: null, second: null },
+    { key: "v2t2c@3", max: null, second: null },
+    { key: "v2t2c-4o@1", max: null, second: null },
+    { key: "v2t2c-4o@3", max: null, second: null }
+  ];
 
-  const maxPass1 = Math.max(...pass1Values);
-  const secondMaxPass1 = Math.max(...pass1Values.filter(value => value < maxPass1));
+  // Calculate the max and second max for each metric
+  metrics.forEach(metric => {
+    const values = data.map(entry => parseFloat(entry.info[metric.key]) || 0);
+    metric.max = Math.max(...values);
+    metric.second = Math.max(...values.filter(value => value < metric.max));
+  });
 
-  const maxPass10 = Math.max(...pass10Values);
-  const secondMaxPass10 = Math.max(...pass10Values.filter(value => value < maxPass10));
-
+  // Populate the table rows
   data.forEach(entry => {
     const model = entry.info;
     const row = document.createElement('tr');
     row.classList.add(model.type);
 
-    const pass1Value = parseFloat(model["pass@1"]) || 0;
-    const pass10Value = parseFloat(model["pass@10"]) || 0;
-
-    let pass1Cell;
-    if (pass1Value === maxPass1) {
-      pass1Cell = `<b>${model["pass@1"]}</b>`;
-    } else if (pass1Value === secondMaxPass1) {
-      pass1Cell = `<u>${model["pass@1"]}</u>`;
-    } else {
-      pass1Cell = model["pass@1"];
-    }
-
-    let pass10Cell;
-    if (pass10Value === maxPass10) {
-      pass10Cell = `<b>${model["pass@10"]}</b>`;
-    } else if (pass10Value === secondMaxPass10) {
-      pass10Cell = `<u>${model["pass@10"]}</u>`;
-    } else {
-      pass10Cell = model["pass@10"];
-    }
-
+    // Set the row's inner HTML using template literals
     row.innerHTML = `
-      <td>${model.name}</td>                 <!-- Model name -->
+      <td>${model.model}</td>
       <td><a href="${model.link}" target="_blank">Link</a></td>
-      <td>${model.design}</td>               <!-- Model structure design -->
-      <td>${model.size}</td>                 <!-- Model size -->
-      <td>${pass1Cell}</td>                  <!-- Pass@1 score with conditional bold or underline -->
-      <td>${pass10Cell}</td>                 <!-- Pass@10 score with conditional bold or underline -->
-      <td>${model["psr@1"]}</td>                  <!-- Pass@1 score with conditional bold or underline -->
-      <td>${model["psr@10"]}</td>                 <!-- Pass@10 score with conditional bold or underline -->
-      <td>${model.date}</td>                 <!-- Date -->
+      <td>${getNumberFormat(metrics, "v2c@1", model["v2c@1"])}</td>
+      <td>${getNumberFormat(metrics, "v2c@3", model["v2c@3"])}</td>
+      <td>${getNumberFormat(metrics, "v2c-cot@1", model["v2c-cot@1"])}</td>
+      <td>${getNumberFormat(metrics, "v2c-cot@3", model["v2c-cot@3"])}</td>
+      <td>${getNumberFormat(metrics, "v2t2c@1", model["v2t2c@1"])}</td>
+      <td>${getNumberFormat(metrics, "v2t2c@3", model["v2t2c@3"])}</td>
+      <td>${getNumberFormat(metrics, "v2t2c-4o@1", model["v2t2c-4o@1"])}</td>
+      <td>${getNumberFormat(metrics, "v2t2c-4o@3", model["v2t2c-4o@3"])}</td>
     `;
 
     tableBody.appendChild(row);
@@ -116,10 +125,11 @@ function enableTableSorting() {
 }
 
 function initializeSorting() {
-  sortTableByColumn(4, 'number', false);
+  sortTableByColumn(7, 'number', false);
 }
 
 function sortTableByColumn(columnIndex, type, ascending) {
+  columnIndex += 2;
   const table = document.querySelector('#HEV-table tbody');
   const rows = Array.from(table.rows);
 

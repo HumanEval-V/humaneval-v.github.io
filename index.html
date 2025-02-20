@@ -6,12 +6,12 @@
     <script src="https://kit.fontawesome.com/f8ddf9854a.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="description"
-          content="A Lightweight Visual Understanding and Reasoning Benchmark for Evaluating LMMs through Code Generation Tasks">
+          content="Benchmarking High-Level Visual Reasoning with Complex Diagrams in Coding Tasks">
     <meta name="keywords" content="Large Multimodal Model, Code Generation, Vision Language Model, Large Language Model">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> HumanEval-V: A Lightweight Visual Understanding and Reasoning Benchmark for Evaluating LMMs through Coding Tasks</title>
+    <title> Benchmarking High-Level Visual Reasoning with Complex Diagrams in Coding Tasks</title>
 
-    <link rel="icon" href="static/images/icon.png">
+    <link rel="icon" href="static/images/square_icon.png">
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -28,6 +28,7 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   </head>
   <body>
 
@@ -41,7 +42,7 @@
                 <span style="vertical-align: middle">HumanEval-V</span>
               </h1>
               <h2 class="subtitle is-3 publication-subtitle">
-                A Lightweight Visual Understanding and Reasoning Benchmark for Evaluating LMMs through Coding Tasks
+                Benchmarking High-Level Visual Reasoning with <br> Complex Diagrams in Coding Tasks
               </h2>
               <div class="is-size-5 publication-authors">
                 <span class="author-block">Fengji Zhang*<sup style="color:#6fbf73;">†,1</sup></a>,</span>
@@ -120,8 +121,8 @@
 
     <section class="hero teaser">
       <div class="container is-max-desktop has-text-centered">
-        <img src="static/images/introduction_example.png" alt="HumanEval-V Coding Task"  width="80%"/>
-        <p>An example coding task in HumanEval-V. Each task involves completing a <b>Python function</b> based on<br> <b>a single image, the function signature, and problem descriptions</b> provided in the comment block.
+        <img src="static/images/task_example.png" alt="HumanEval-V Coding Task"  width="65%"/>
+        <p>An example task in HumanEval-V. Each task involves completing a <b>Python function</b> based on<br> <b>a single diagram, the function signature, and simple instructions</b> provided in the comment block.
         </p>
       </div>
     </section>
@@ -130,39 +131,56 @@
       <div class="container">
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <h2 class="title is-3">🔔News</h2>
+            <h2 class="title is-3">👀Introduction</h2>
             <div class="content has-text-justified">
-              <ul>
-              <li><b>[2024.11.20]</b> <b>Pixtral-Large-Instruct-2411</b> achieves <b>new open-weight SOTA</b> on HumanEval-V with <b>11.1</b> <i>pass@1</i> and <b>26.9</b> <i>pass@10</i> !</li>
-              <li><b>[2024.10.23]</b> <b>Claude 3.5 Sonnet (1022)</b> achieves <b>new SOTA</b> on HumanEval-V with <b>25.9</b> <i>pass@1</i> and <b>42.6</b> <i>pass@10</i> !</li>
-              <li><b>[2024.10.23]</b> We include more SOTA LMMs in the learderboard, including <a href="https://huggingface.co/mistralai/Pixtral-12B-2409">Pixtral</a>, <a href="https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct">Llama-3.2-Vision</a>, <a href="https://huggingface.co/rhymes-ai/Aria">Aria</a>, and <a href="https://huggingface.co/AIDC-AI/Ovis1.6-Gemma2-9B">Ovis1.6-Gemma2</a></li>
-              <li><b>[2024.10.23]</b> We've updated the <i>Parsing Success Rate</i> metric (passing <i>Pylint</i> without errors). Many LMMs perform poorly, indicating a decline in generating syntactically correct code.</li>
-              <li><b>[2024.10.17]</b> Our paper is now accessible at <a href="https://huggingface.co/papers/2410.12381">huggingface.co/papers/2410.12381</a> (<b>#2</b> Paper of the day)</li>
-              </ul>
-            </div>
+              <p><strong>HumanEval-V</strong> is a novel benchmark designed to evaluate the ability of <strong>Large Multimodal Models (LMMs)</strong> to understand and reason over <strong>complex diagrams</strong> in programming contexts. Unlike traditional multimodal or coding benchmarks, <strong>HumanEval-V</strong> challenges models to generate <strong>Python code</strong> based on <strong>visual inputs</strong> that are <strong>indispensable</strong> for solving the task. Our dataset consists of <strong>253 human-annotated coding tasks</strong>, each requiring LMMs to <strong>perceive, interpret, and reason</strong> over diagrams to produce functionally correct code solutions.</p>
 
-            <h2 class="title is-3">Introduction</h2>
-            <div class="content has-text-justified">
-              <p>
-                Coding tasks have been valuable for evaluating Large Language Models (LLMs), as they demand the comprehension of <b>high-level instructions, complex reasoning, and the implementation of functional programs</b> -- core capabilities for advancing Artificial General Intelligence. Despite the progress in Large Multimodal Models (LMMs), which extend  LLMs with visual perception and understanding capabilities, there remains <b>a notable lack of coding benchmarks that rigorously assess LMMs, particularly in tasks that emphasize visual reasoning</b>. 
-                To address this gap, we introduce HumanEval-V, a novel and lightweight benchmark specifically designed to evaluate LMMs' visual understanding and reasoning capabilities through code generation tasks. <font color="#9900FF"><b>HumanEval-V includes 108 carefully crafted, entry-level Python coding tasks</b></font> derived from platforms like CodeForces and Stack Overflow. Each task is adapted by modifying the context and algorithmic patterns of the original problems, with visual elements redrawn to ensure distinction from the source, preventing potential data leakage.
-                LMMs are required to <font color="#9900FF"><b>complete the code solution based on the provided visual context and a predefined Python function signature</b></font> outlining the task requirements. Every  task is equipped with meticulously <font color="#9900FF"><b>handcrafted test cases for execution-based pass@<i>k</i> evaluation</b></font>.
-                We evaluate 20+ state-of-the-art LMMs using HumanEval-V, uncovering significant challenges. Proprietary models like <b>GPT-4o achieve only 13% pass@1 and 36.4% pass@10</b>, while <b>open-weight models with 70B parameters score below 4% pass@1</b>. Ablation studies further demonstrate the limitations of current LMMs in vision  reasoning and  coding abilities. 
-                These results highlight key areas for future research to enhance LMMs' capabilities.
-              </p>
+              <h5><strong>Why HumanEval-V?</strong></h5>
+
+              <p>Despite recent advancements in <strong>multimodal reasoning</strong>, existing benchmarks focus primarily on <strong>scientific</strong>, <strong>mathematical</strong>, <strong>chart-based analysis</strong>, or <strong>abstract visual reasoning</strong> (in IQ tests), assessing models' domain knowledge or deduction abilities. These benchmarks don't fully challenge models to understand <strong>complex diagrams</strong> in the way that humans do.</p>
+
+              <p><strong>HumanEval-V</strong> addresses this gap by introducing coding tasks where the <strong>diagram alone</strong> encodes most of the problem context. Models must perform advanced <strong>visual reasoning</strong> without relying on lengthy textual descriptions, pushing the boundaries of <strong>vision reasoning</strong> capabilities.</p>
+
+              <h5><strong>Key Features</strong></h5>
+              <div class="container is-max-desktop has-text-centered">
+                <img src="static/images/task_type_and_capability_aspects.png" alt="Task types in HumanEval-V, and the capability aspects required for understanding diagrams in HumanEval-V"  width="100%"/>
+              </div>
+
+              <ul>
+                <li><strong>Indispensable visual context</strong>: Each task includes a self-contained diagram, eliminating reliance on detailed textual descriptions.</li>
+                <li><strong>Diverse and realistic problem types</strong>: The dataset spans <strong>six distinct categories</strong>, covering a wide range of visual reasoning abilities.</li>
+                <li><strong>Code generation task</strong>: Unlike many multimodal benchmarks, which rely on <strong>MCQ or short-answer tasks</strong>, HumanEval-V requires models to <strong>generate executable code</strong>, ensuring a more rigorous evaluation of diagram comprehension.</li>
+                <li><strong>Structured evaluation pipeline</strong>: We introduce a <strong>two-stage evaluation</strong> approach where LMMs only need to generate a structured <strong>diagram description</strong>, which will be translated into code by a separate strong coder model. This ensures that visual understanding is explicitly assessed rather than conflated with coding proficiency.</li>
+                <li><strong>Execution-based evaluation</strong>: Solutions are tested using <strong>handcrafted test cases</strong> and scored with the <strong>pass@k</strong> metric, providing an objective measure of correctness.</li>
+              </ul>
+
+              <h5><strong>Challenges for LMMs</strong></h5>
+              <ul>
+                <li><strong>Top-performing models</strong> struggle, with <strong>Claude 3.5 Sonnet</strong> achieving only <strong>36.8% pass@1</strong>, while <strong>Pixtral 124B</strong> reaches <strong>21.3% pass@1</strong>.</li>
+                <li>LMMs perform better at <strong>diagram description</strong> than direct <strong>code generation</strong>, revealing a gap in their <strong>vision-to-code</strong> capabilities.</li>
+                <li><strong>Sampling</strong> and <strong>iterative refinement</strong> improve results, with <strong>Claude 3.5 Sonnet</strong> reaching <strong>74.3% pass@1</strong> with 100 samples and <strong>55.3% pass@1</strong> with four self-refinement iterations.</li>
+                <li>Models struggle with tasks <strong>trivial for humans</strong>, especially in <strong>spatial transformations</strong>, <strong>topological relationships</strong>, and <strong>dynamic patterns</strong>.</li>
+              </ul>
+
             </div>
-            <h2 class="title is-3">Benchmark Construction</h2>
+            <h2 class="title is-3">🛠 Benchmark Construction</h2>
             <div class="container is-max-desktop has-text-centered">
-              <img src="static/images/construct_pipeline.png" alt="HumanEval-V Construction">
-              <p>The construction of HumanEval-V follows a <b>collect-adapt-mutate</b> pipeline. After constructing the benchmark, we perform rigorous validation to ensure that each coding task <b>aligns with the standards</b>.
+              <img src="static/images/construct_pipeline.png" alt="HumanEval-V Construction" width="100%">
+              <p>We construct HumanEval-V following a <b>collect-distill-recreate-diversify</b> pipeline. After constructing the benchmark, <br> we perform rigorous validation to ensure that each coding task aligns with high-quality standards.
               </p>
             </div>
             <br>
-            <h2 class="title is-3">Visual Context Examples</h2>
+            <h2 class="title is-3">📁Diagram Examples</h2>
             <div class="container is-max-desktop has-text-centered">
-              <img src="static/images/concatenated_images.png" alt="HumanEval-V Examples">
+              <img src="static/images/our_diagrams.png" alt="HumanEval-V Examples" width="100%">
               <p>HumanEval-V includes visual elements like trees, graphs, matrices, maps, grids, flowcharts, and more. The visual contexts are designed to be <b>indispensable and self-explanatory</b>, embedding rich contextual information and algorithmic patterns.
               </p>
+            </div>
+            <br>
+            <h2 class="title is-3">⚙ Evaluation Setting</h2>
+            <div class="container is-max-desktop has-text-centered">
+              <img src="static/images/evaluation_pipeline.png" alt="HumanEval-V Evaluation Pipelines" width="90%">
+              <p>We use a structured <b>evaluation pipeline</b> to assess <b>visual reasoning</b> and <b>coding efficiency</b> separately,<br> ensuring that models' abilities are evaluated in a decoupled manner.</p>
             </div>
           </div>
         </div>
@@ -171,47 +189,52 @@
       <!-------------------------------------------------------------------- RESULTS SECTION -------------------------------------------------------------------->
       <div class="columns is-centered m-6">
         <div class="column is-full has-text-centered content">
-          <h2 class="title is-3" id="leaderboard">🏆Leaderboard on HumanEval-V🏆</h2>
+          <h2 class="title is-3" id="leaderboard">🏆Leaderboard🏆</h2>
           
           <div class="model-labels-container">
-            <span class="leaderboard-label open_source">Open-Weight</span>
+            <span class="leaderboard-label open_weight">Open-Weight</span>
             <span class="leaderboard-label proprietary">Proprietary</span>
           </div>
           <br>
           <div class="content has-text-centered content">
             <p class="test-desc"> 
               The best performance is shown in <b>bold</b>, while the second-best is indicated by <u>underlining</u>. 
-              You can sort <i>Pass@1</i> or <i>Pass@10</i> by clicking on the column headers.<br>
+              You can sort <i>pass@1</i> or <i>pass@3</i> by clicking on the column headers.<br>
             </p>
           </div>
           <div class="leaderboard-container">
             <div class="table-wrapper">
               <table id="HEV-table">
-                <thead>
-                  <tr>
-                    <th class="sortable clickable" data-sort="string">Name</th>
-                    <th class="sortable clickable" data-sort="string">Source</th>
-                    <th class="sortable clickable" data-sort="string">Design</th>
-                    <th class="sortable clickable" data-sort="string">Size</th>
-                    <th class="sortable clickable sort-desc" data-sort="number">Pass@1</th>
-                    <th class="sortable clickable" data-sort="number">Pass@10</th>
-                    <th class="sortable clickable" data-sort="number">PSR@1</th>
-                    <th class="sortable clickable" data-sort="number">PSR@10</th>
-                    <th class="sortable clickable" data-sort="date">Date</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- Table body will be populated dynamically -->
-                </tbody>
+                  <thead>
+                      <tr>
+                          <th rowspan="2" style="vertical-align: middle; width: 200px;">Models</th>
+                          <th rowspan="2" style="vertical-align: middle; width: 50px;">Source</th>
+                          <th colspan="2">V2C</th>
+                          <th colspan="2">V2C w/ CoT</th>
+                          <th colspan="2">V2T2C</th>
+                          <th colspan="2">V2T2C w/ GPT-4o</th>
+                      </tr>
+                      <tr>
+                          <th class="sortable clickable" style="width: 100px;" data-sort="number">pass@1</th>
+                          <th class="sortable clickable" style="width: 100px;" data-sort="number">pass@3</th>
+                          <th class="sortable clickable" style="width: 100px;" data-sort="number">pass@1</th>
+                          <th class="sortable clickable" style="width: 100px;" data-sort="number">pass@3</th>
+                          <th class="sortable clickable" style="width: 100px;" data-sort="number">pass@1</th>
+                          <th class="sortable clickable" style="width: 100px;" data-sort="number">pass@3</th>
+                          <th class="sortable clickable" style="width: 100px;" data-sort="number">pass@1</th>
+                          <th class="sortable clickable sort-desc" style="width: 100px;" data-sort="number">pass@3</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
               </table>
             </div>
-          </div>
+        </div>
+
           <div class="content has-text-left content">
             <p class="test-desc">
             <ul>
-              <li><i>Pass@1</i> is computed using greedy decoding, whereas <i>Pass@10</i> is based on 20 generated samples with sampling parameters of <i>t=0.8</i> and <i>p=0.95</i>.</li>
-              <li><i>PSR</i> represents the percentage of samples that pass Pylint checks without any errors.</li>
-              <li>The <i>Encoder-Decoder</i> design signifies that the model is trained using a vision encoder and a language model decoder.</li>
+              <li><i>pass@1</i> is computed using greedy decoding, whereas <i>pass@3</i> is based on 6 generated samples with sampling parameters of <i>t=0.8</i>, <i>topk=20</i> and <i>topp=0.95</i>.</li>
             </ul>
             </p>
           </div>
@@ -219,14 +242,12 @@
       </div>
     </div>
     </section>
-
-    <!-- @PAN TODO: bibtex -->
     <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
         <h2 class="title is-3 has-text-centered">BibTeX</h2>
         <pre><code>
 @article{zhang2024humanevalv,
-  title={HumanEval-V: Evaluating Visual Understanding and Reasoning Abilities of Large Multimodal Models Through Coding Tasks}, 
+  title={HumanEval-V: Benchmarking High-Level Visual Reasoning with Complex Diagrams in Coding Tasks}, 
   author={Zhang, Fengji and Wu, Linquan and Bai, Huiyu and Lin, Guancheng and Li, Xiao and Yu, Xiao and Wang, Yue and Chen, Bei and Keung, Jacky},
   journal={arXiv preprint arXiv:2410.12381},
   year={2024},
@@ -239,11 +260,14 @@
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="content">
-            <p>
-              This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mmmu-benchmark.github.io/">MMMU</a>, licensed under a <a rel="license"
-                                                  href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-              Commons Attribution-ShareAlike 4.0 International License</a>.
-            </p>
+            <div class="visitor-counter">
+              <p>Thank you for visiting! You are visitor #<span id="busuanzi_value_site_uv" class="visitor-number"></span>. Total page views: <span id="busuanzi_value_site_pv" class="view-number"></span>.</p>
+              <p>
+                This website is adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mmmu-benchmark.github.io/">MMMU</a>, licensed under a <a rel="license"
+                                                    href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+              </p>
+            </div>
           </div>
         </div>
       </div>

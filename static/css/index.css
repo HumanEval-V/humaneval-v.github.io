@@ -26,7 +26,7 @@ body {
   background-color: rgba(255, 208, 80, 0.15);
 }
 
-.open_source {
+.open_weight {
   background-color: rgba(249, 242, 248, 1);
 }
 
@@ -322,4 +322,22 @@ td:hover {
 
 #toggleButton:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.visitor-counter {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.visitor-number, .view-number {
+  font-weight: bold;
+  color: #007bff;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
