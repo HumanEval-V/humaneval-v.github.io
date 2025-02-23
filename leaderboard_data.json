@@ -358,5 +358,20 @@
             "v2t2c-4o@1": "-",
             "v2t2c-4o@3": "-"
         }
+    },
+    {
+        "info": {
+            "model": "Step 1o Vision",
+            "type": "proprietary",
+            "link": "https://platform.stepfun.com/docs/llm/vision",
+            "v2c@1": "-",
+            "v2c@3": "-",
+            "v2c-cot@1": "15.8",
+            "v2c-cot@3": "24.8",
+            "v2t2c@1": "-",
+            "v2t2c@3": "-",
+            "v2t2c-4o@1": "18.6",
+            "v2t2c-4o@3": "33.4"
+        }
     }
 ]
